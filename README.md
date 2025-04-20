@@ -5,7 +5,9 @@
   <img src="Screenshot_1.png" width="400"/>
   <img src="Screenshot_2.png" width="800"/>
 </p>
+
 ---
+
 ## Setup
 
 ### 1. Clone the repository
@@ -28,6 +30,7 @@ Checks and sends notifications on the app and discord if a course is available.
 An access key from me is needed to use the app.
 
 ---
+
 ## Tech Used
 - **Electron**
 - **Node.js**

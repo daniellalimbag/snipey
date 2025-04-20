@@ -1,0 +1,21 @@
+# Node dependencies
+node_modules/
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Optional: Ignore Python cache (if you're using checker.py regularly)
+__pycache__/
+*.pyc
+
+# Build artifacts (if you use a tool to package your Electron app later)
+dist/
+build/
+out/
+
+# config folder with credentials
+config/

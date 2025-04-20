@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Snipey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="notification" class="notification hidden">
+    <button id="close-notification" class="close-btn">×</button>
+    <div id="notification-content">
+      <h4>Available Classes!</h4>
+      <p>The following classes are now OPEN for enrollment:</p>
+      <ul id="notification-list">
+        <!-- Available classes will be listed here -->
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="theme-switch-wrapper">
+      <span>🌞</span>
+      <label class="theme-switch" for="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="slider"></span>
+      </label>
+      <span>🌙</span>
+    </div>
+    
+    <h1>Snipey</h1>
+    <p class="subtitle">MLS Course Checker</p>
+    
+    <div class="form-group">
+      <label for="dlsu-id">DLSU ID:</label>
+      <input type="text" id="dlsu-id" placeholder="Enter your DLSU ID">
+    </div>
+    <div class="form-group">
+      <label for="access-key">Access Key:</label>
+      <input type="password" id="access-key" placeholder="Enter access key">
+    </div>
+    
+    <div id="course-class-container">
+      <h3>Course & Class Codes</h3>
+      <p class="help-text">Add course codes and class codes here</p>
+      
+      <div id="course-entries">
+        <!-- Course entries will be added here -->
+      </div>
+      
+      <button id="add-course-btn" class="btn">Add New Course</button>
+    </div>
+    
+    <div class="form-group">
+      <label for="refresh-interval">Check Interval (seconds):</label>
+      <input type="number" id="refresh-interval" min="5" value="5">
+    </div>
+    
+    <div class="form-group">
+      <label for="headless-mode">
+        <input type="checkbox" id="headless-mode" checked>
+        Run in Headless Mode
+      </label>
+    </div>
+    
+    <div class="discord-settings">
+      <h3>Discord Notifications</h3>
+      <div class="form-group">
+        <label for="discord-enabled">
+          <input type="checkbox" id="discord-enabled">
+          Enable Discord Notifications
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <label for="discord-channel-id">Channel ID:</label>
+        <input type="text" id="discord-channel-id" placeholder="Enter Discord Channel ID">
+        <p class="help-text">Right-click on channel and select "Copy ID". Make sure the bot is added to the target server</p>
+      </div>
+      
+      <button id="save-discord-settings" class="btn">Save Discord Settings</button>
+      <p id="discord-status" class="status-message"></p>
+    </div>
+    
+    <div class="button-group">
+      <button id="start-btn" class="btn">Start Checking</button>
+      <button id="stop-btn" class="btn btn-stop" disabled>Stop</button>
+    </div>
+    
+    <div class="output-container">
+      <h3>Logs:</h3>
+      <div id="output" class="output"></div>
+    </div>
+
+  </div>
+  
+  <template id="course-entry-template">
+    <div class="course-entry">
+      <div class="course-header">
+        <div class="form-group">
+          <label>Course Code:</label>
+          <input type="text" class="course-code" placeholder="e.g., GEUSELF">
+        </div>
+        <button class="remove-course-btn btn-small btn-danger">✕</button>
+      </div>
+      
+      <div class="class-entries">
+        <!-- Class entries will be added here -->
+      </div>
+      
+      <button class="add-class-btn btn-small">Add Class</button>
+    </div>
+  </template>
+  
+  <template id="class-entry-template">
+    <div class="class-entry">
+      <div class="form-group">
+        <label>Class Code:</label>
+        <input type="text" class="class-code" placeholder="e.g., 2020">
+      </div>
+      <button class="remove-class-btn btn-small btn-danger">✕</button>
+    </div>
+  </template>
+  
+  <!-- custom alert modal -->
+  <div id="custom-alert" class="custom-alert hidden">
+    <div class="custom-alert-content">
+      <p id="custom-alert-message"></p>
+      <button id="custom-alert-ok">OK</button>
+    </div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,8 +1,10 @@
 ---
 Snipey
-![Main](Screenshot_3.png)
-![App Notification](Screenshot_1.png)
-![Discord Notification](Screenshot_2.png)
+<p float="left">
+  <img src="Screenshot_3.png" width="300"/>
+  <img src="Screenshot_1.png" width="300"/>
+  <img src="Screenshot_2.png" width="300"/>
+</p>
 ---
 ## Setup
 

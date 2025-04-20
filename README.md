@@ -24,8 +24,7 @@ An access key from me is needed to use the app.
 
 ---
 ## Tech Used
-Electron
-Node.js
-SeleniumBase
-Python
+- **Electron**
+- **Node.js**
+- **SeleniumBase**
 ---

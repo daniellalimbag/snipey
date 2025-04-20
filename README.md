@@ -1,12 +1,13 @@
 ---
 Snipey
+
 ---
 ## Setup
 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/daniellalimbag/MLS-Web-Scraper.git
-cd MLS-Web-Scraper
+cd snipey
 ```
 
 ### 2. Install dependencies

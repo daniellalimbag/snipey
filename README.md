@@ -1,8 +1,8 @@
 ---
 Snipey
-![Main](screenshots/Screenshot_3.png)
+![Main](Screenshot_3.png)
 ![App Notification](Screenshot_1.png)
-![Discord Notification](screenshots/Screenshot_2.png)
+![Discord Notification](Screenshot_2.png)
 ---
 ## Setup
 

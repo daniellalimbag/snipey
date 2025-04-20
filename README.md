@@ -1,5 +1,5 @@
 ---
-Checks and sends notifications on the app and discord if a course is available.
+Snipey
 ---
 ## Setup
 
@@ -18,7 +18,10 @@ npm install
 ```bash
 npm start
 ```
+
+Checks and sends notifications on the app and discord if a course is available.
 An access key from me is needed to use the app.
+
 ---
 ## Tech Used
 Electron

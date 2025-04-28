@@ -14,6 +14,7 @@ const addCourseBtn = document.getElementById('add-course-btn');
 const courseEntries = document.getElementById('course-entries');
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const accessKeyInput = document.getElementById('access-key');
+const clearLogsBtn = document.getElementById('clear-logs-btn');
 
 const discordEnabledCheckbox = document.getElementById('discord-enabled');
 const discordChannelInput = document.getElementById('discord-channel-id');
@@ -127,6 +128,12 @@ function initializeUI() {
   saveDiscordBtn.addEventListener('click', saveDiscordSettings);
   discordEnabledCheckbox.addEventListener('change', updateDiscordFieldsState);
   updateDiscordFieldsState();
+  
+  if (clearLogsBtn) {
+    clearLogsBtn.addEventListener('click', () => {
+      outputDiv.innerHTML = '';
+    });
+  }
 }
 
 function updateDiscordFieldsState() {
